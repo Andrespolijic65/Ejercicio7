@@ -1,0 +1,24 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cantidades">
+        <xs:complexType>
+            <xs:sequence>
+               <xs:element ref="cantidad"/>
+            </xs:sequence>
+        </xs:complexType>
+
+    </xs:element>
+    <xs:element name="cantidad" type="tipoCantidad"/>
+    <xs:complexType name="tipoCantidad">
+        <xs:simpleContent>
+            <xs:extension base="xs:float">
+                <xs:attribute name="divisa" type="tipoDivisa"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:simpleType name="tipoDivisa">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="euro"/>
+            <xs:enumeration value="dolar"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

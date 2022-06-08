@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cantidades xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="ejercicio7.xsd">
+
+    <cantidad divisa="dolar">18.32</cantidad>
+</cantidades>
